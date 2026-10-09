@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Эрик Картман, нарисованный и анимированный средствами HTML и CSS без изображений и SVG.">
+  <title>South Park — анимированный CSS-персонаж</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top" class="southpark-root">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html">Мариуполь<span>.</span></a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="infrastructure.html">Инфраструктура</a></li>
+        <li><a href="culture.html">Культура</a></li>
+        <li><a href="about.html">О разработчике</a></li>
+        <li><a href="contact.html">Обратная связь</a></li>
+        <li><a class="active" aria-current="page" href="southpark.html">South Park</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page-main southpark-page">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Усложнённое задание · +5 баллов</p>
+      <h1>Анимированный персонаж South Park на чистом HTML + CSS</h1>
+      <p>Вместо четырёх упрощённых фигур оставлен один более детализированный персонаж — Эрик Картман. Изображения, SVG, Canvas и JavaScript не используются.</p>
+    </div>
+  </section>
+
+  <section class="section container css-character-layout">
+    <article class="css-character-info">
+      <p class="eyebrow">CSS-only character</p>
+      <h2>Эрик Картман</h2>
+      <p>Персонаж собран из обычных HTML-элементов. Голова, шапка, куртка, руки, глаза и остальные детали создаются с помощью <code>div</code>, <code>span</code>, <code>border-radius</code>, позиционирования и псевдоэлементов.</p>
+      
+      <div class="character-tech-list" aria-label="Использованные технологии">
+        <span>HTML5</span>
+        <span>SCSS</span>
+        <span>CSS Shapes</span>
+        <span>@keyframes</span>
+        <span>::before / ::after</span>
+      </div>
+
+      <aside class="note-card character-note">
+        <h3>Картман</h3>
+        <p><strong>Ни одного изображения.</strong> Внешний вид и движение полностью задаются CSS.</p>
+      </aside>
+    </article>
+
+    <div class="cartman-showcase">
+      <div class="cartman-scene" role="img" aria-label="Анимированный Эрик Картман, нарисованный HTML и CSS">
+        <div class="css-cloud cloud-a"></div>
+        <div class="css-cloud cloud-b"></div>
+        <div class="css-mountain mountain-a"></div>
+        <div class="css-mountain mountain-b"></div>
+        <div class="css-ground"></div>
+
+        <div class="cartman-figure">
+          <div class="cartman-shadow"></div>
+
+          <div class="cartman-legs">
+            <span class="cartman-leg leg-left"></span>
+            <span class="cartman-leg leg-right"></span>
+          </div>
+
+          <div class="cartman-body">
+            <span class="cartman-coat-line"></span>
+            <span class="cartman-button button-one"></span>
+            <span class="cartman-button button-two"></span>
+            <span class="cartman-button button-three"></span>
+
+            <div class="cartman-arm arm-left"><span class="cartman-mitten"></span></div>
+            <div class="cartman-arm arm-right"><span class="cartman-mitten"></span></div>
+          </div>
+
+          <div class="cartman-head">
+            <div class="cartman-ear ear-left"></div>
+            <div class="cartman-ear ear-right"></div>
+
+            <div class="cartman-eye eye-left"><span class="cartman-pupil"></span><span class="cartman-lid"></span></div>
+            <div class="cartman-eye eye-right"><span class="cartman-pupil"></span><span class="cartman-lid"></span></div>
+
+            <span class="cartman-nose"></span>
+            <span class="cartman-mouth"></span>
+            <span class="cartman-chin"></span>
+          </div>
+
+          <div class="cartman-hat">
+            <span class="cartman-hat-band"></span>
+            <span class="cartman-pom"></span>
+          </div>
+        </div>
+
+        <div class="scene-label"><span class="live-dot"></span> CSS animation</div>
+      </div>
+      <p class="showcase-tip">Наведи курсор на персонажа — анимация станет активнее.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><strong>South Park CSS</strong><br><small>Усложнённое задание</small></div>
+    <address>Лабораторная работа №1</address>
+    <a href="#top">Наверх ↑</a>
+  </div>
+</footer>
+<a class="to-top" href="#top" aria-label="Наверх">↑</a>
+</body>
+</html>

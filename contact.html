@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Форма обратной связи с HTML5-валидацией.">
+  <title>Мариуполь — обратная связь</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top" class="contact-page">
+<header class="site-header"><div class="container header-inner"><a class="logo" href="index.html">Мариуполь<span>.</span></a><nav class="main-nav" aria-label="Основная навигация"><ul><li><a href="index.html">Главная</a></li><li><a href="history.html">История</a></li><li><a href="infrastructure.html">Инфраструктура</a></li><li><a href="culture.html">Культура</a></li><li><a href="about.html">О разработчике</a></li><li><a class="active" aria-current="page" href="contact.html">Обратная связь</a></li><li><a href="southpark.html">South Park</a></li></ul></nav></div></header>
+
+<main class="page-main">
+  <section class="page-hero"><div class="container"><p class="eyebrow">Связь</p><h1>Форма обратной связи</h1><p>Поля проверяются встроенными средствами HTML5 и стилями CSS.</p></div></section>
+
+  <section class="section container contact-layout">
+    <article>
+      <h2>Напишите сообщение</h2>
+      <p>Поля, отмеченные символом <span class="required-star">*</span>, обязательны. В имени разрешены буквы, пробел и дефис; email проверяется типом <code>email</code>.</p>
+
+      <form class="contact-form" action="#" method="post">
+        <fieldset>
+          <legend>Контактные данные</legend>
+
+          <label for="name">Имя <span class="required-star">*</span></label>
+          <input id="name" name="name" type="text" required minlength="2" maxlength="40" pattern="[A-Za-zА-Яа-яЁёІіЇїЄє' -]{2,40}" placeholder="Например, Алексей" autocomplete="name">
+          <small>От 2 до 40 символов.</small>
+
+          <label for="email">Email <span class="required-star">*</span></label>
+          <input id="email" name="email" type="email" required placeholder="name@example.com" autocomplete="email">
+
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="tel" pattern="\+?[0-9() -]{7,20}" placeholder="+7 (000) 000-00-00" autocomplete="tel">
+        </fieldset>
+
+        <fieldset>
+          <legend>Сообщение</legend>
+          <label for="topic">Тема</label>
+          <select id="topic" name="topic">
+            <option value="site">Отзыв о сайте</option>
+            <option value="history">История города</option>
+            <option value="culture">Культура</option>
+            <option value="other">Другое</option>
+          </select>
+
+          <label for="district">Район города</label>
+          <input id="district" name="district" list="districts" placeholder="Выберите или введите">
+          <datalist id="districts"><option value="Центральный"><option value="Кальмиусский"><option value="Левобережный"><option value="Приморский"></datalist>
+
+          <label for="message">Сообщение <span class="required-star">*</span></label>
+          <textarea id="message" name="message" required minlength="10" maxlength="700" rows="7" placeholder="Введите сообщение..."></textarea>
+
+          <label class="checkbox-row"><input type="checkbox" name="agreement" required> <span>Я согласен на учебную обработку введённых данных <span class="required-star">*</span></span></label>
+        </fieldset>
+
+        <div class="form-actions">
+          <button type="submit">Отправить</button>
+          <button type="reset" class="button-muted">Очистить</button>
+          <button type="button" disabled>Недоступная кнопка</button>
+        </div>
+      </form>
+    </article>
+
+    <aside class="validation-card">
+      <h3>Как работает валидация</h3>
+      <ol>
+        <li><code>required</code> запрещает отправку пустого обязательного поля.</li>
+        <li><code>type="email"</code> проверяет базовый формат email.</li>
+        <li><code>pattern</code> задаёт регулярное выражение.</li>
+        <li><code>minlength</code> и <code>maxlength</code> ограничивают длину.</li>
+      </ol>
+      <p>В CSS используются состояния <code>:required</code>, <code>:valid</code>, <code>:invalid</code>, <code>:focus</code> и <code>:disabled</code>.</p>
+    </aside>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><strong>Обратная связь</strong><br><small>HTML5-валидация</small></div><address>Лабораторная работа №1</address><a href="#top">Наверх ↑</a></div></footer>
+<a class="to-top" href="#top" aria-label="Наверх">↑</a>
+</body>
+</html>

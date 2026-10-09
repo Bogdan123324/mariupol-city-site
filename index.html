@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебный многостраничный сайт об истории и культуре Мариуполя. Лабораторная работа по HTML5, CSS и SCSS.">
+  <title>Мариуполь — главная</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top" class="home-page">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="На главную">Мариуполь<span>.</span></a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <ul>
+        <li><a class="active" aria-current="page" href="index.html">Главная</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="infrastructure.html">Инфраструктура</a></li>
+        <li><a href="culture.html">Культура</a></li>
+        <li><a href="about.html">О разработчике</a></li>
+        <li><a href="contact.html">Обратная связь</a></li>
+        <li><a href="southpark.html">South Park</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-layout">
+      <div class="hero-content">
+        <p class="eyebrow">Городской портал · Азовское побережье</p>
+        <h1 id="hero-title">Мариуполь — город у Азовского моря</h1>
+        <p class="hero-text">Мариуполь — крупный портовый и промышленный город на северном побережье Азовского моря, у устья Кальмиуса. Его развитие исторически связано с морским портом, металлургией, торговлей и многонациональной культурой Приазовья.</p>
+        <div class="hero-actions">
+          <a class="button" href="#gallery">Посмотреть город <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="history.html">Изучить историю</a>
+        </div>
+        <div class="hero-metrics" aria-label="Краткие сведения о сайте">
+          <div><strong>7</strong><span>фотографий</span></div>
+          <div><strong>12</strong><span>событий истории</span></div>
+          <div><strong>6+</strong><span>страниц проекта</span></div>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Theater_square_Mariupol.jpg" alt="Театральный сквер Мариуполя">
+        <figcaption><span>Мариуполь</span><strong>Город у моря</strong></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section container intro-grid" aria-labelledby="city-short">
+    <article>
+      <h2 id="city-short">Коротко о городе</h2>
+      <p>Мариуполь формировался как торговый и портовый центр. В XIX веке железная дорога и глубоководный порт ускорили развитие промышленности, а в XX веке город стал одним из крупнейших металлургических центров Приазовья.</p>
+      <p>Городская среда сочетает морское побережье, промышленные районы, историческую застройку и культурные объекты. В истории Мариуполя заметное место занимают греческие традиции Приазовья, театр, музейное дело и творчество художника <strong>Архипа Куинджи</strong>.</p>
+      <p class="note"><mark>О проекте:</mark> история, городская среда и культурное наследие Мариуполя собраны в едином информационном пространстве.</p>
+    </article>
+    <aside class="fact-card" aria-label="Краткие сведения">
+      <h3>Быстрые факты</h3>
+      <dl>
+        <dt>Море</dt><dd>Азовское</dd>
+        <dt>Река</dt><dd>Кальмиус</dd>
+        <dt>Тип города</dt><dd>портовый и промышленный</dd>
+        <dt>Историческое имя</dt><dd>Мариуполь</dd>
+      </dl>
+      <details>
+        <summary>Почему порт был важен?</summary>
+        <p>Он связал город с морской торговлей и стал одним из ключевых факторов роста промышленности и населения.</p>
+      </details>
+    </aside>
+  </section>
+
+  <section class="section section-soft" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow">Фотогалерея</p>
+        <h2 id="gallery-title">Мариуполь в фотографиях</h2>
+        <p>Сетка адаптируется под ширину экрана. Все фотографии используются по открытым лицензиям Wikimedia Commons.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Theater_square_Mariupol.jpg" alt="Театральный сквер Мариуполя" loading="lazy">
+          <figcaption>Театральный сквер, 2019</figcaption>
+        </figure>
+        <figure>
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Mariupol_tower.jpg/960px-Mariupol_tower.jpg" alt="Старая водонапорная башня Мариуполя" loading="lazy">
+          <figcaption>Старая водонапорная башня</figcaption>
+        </figure>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/%D0%9F%D0%BE%D1%80%D1%82_%D0%9C%D0%B0%D1%80%D1%96%D1%83%D0%BF%D0%BE%D0%BB%D1%8C.jpg/960px-%D0%9F%D0%BE%D1%80%D1%82_%D0%9C%D0%B0%D1%80%D1%96%D1%83%D0%BF%D0%BE%D0%BB%D1%8C.jpg" alt="Мариупольский морской порт" loading="lazy">
+          <figcaption>Морской порт, 2020</figcaption>
+        </figure>
+        <figure>
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Mosque_in_Mariupol.jpg/960px-Mosque_in_Mariupol.jpg" alt="Мечеть султана Сулеймана в Мариуполе" loading="lazy">
+          <figcaption>Мечеть султана Сулеймана</figcaption>
+        </figure>
+        <figure>
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Mariupol_beach_2012_%284%29.JPG/960px-Mariupol_beach_2012_%284%29.JPG" alt="Пляж и Азовское море в Мариуполе" loading="lazy">
+          <figcaption>Побережье Азовского моря</figcaption>
+        </figure>
+        <figure>
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Mariupol_skyline.jpg/960px-Mariupol_skyline.jpg" alt="Панорама Мариуполя" loading="lazy">
+          <figcaption>Панорама города</figcaption>
+        </figure>
+        <figure>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/%D0%94%D1%80%D0%B0%D0%BC%D1%82%D0%B5%D0%B0%D1%82%D1%80_%D0%9C%D0%B0%D1%80%D1%96%D1%83%D0%BF%D0%BE%D0%BB%D1%8C.jpg/960px-%D0%94%D1%80%D0%B0%D0%BC%D1%82%D0%B5%D0%B0%D1%82%D1%80_%D0%9C%D0%B0%D1%80%D1%96%D1%83%D0%BF%D0%BE%D0%BB%D1%8C.jpg" alt="Здание драматического театра Мариуполя" loading="lazy">
+          <figcaption>Драматический театр, 2020</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="events-title">
+    <div class="section-heading">
+      <p class="eyebrow">Актуально</p>
+      <h2 id="events-title">События сентября 2026 года</h2>
+    </div>
+    <div class="cards three-cols">
+      <article class="news-card">
+        <time datetime="2026-09-16">16 сентября 2026</time>
+        <h3>«Джаз на родном языке»</h3>
+        <p>Концерт группы «Майнугин Бэнд» заявлен на второй сцене Мариупольского драматического театра.</p>
+        <a href="https://teatrmariupol.ru/afisha/134-dzaz-na-rodnom-iazyke" target="_blank" rel="noopener noreferrer">Источник события</a>
+      </article>
+      <article class="news-card featured">
+        <time datetime="2026-09-16">16–18 сентября 2026</time>
+        <h3>Фестиваль цифрового искусства</h3>
+        <p>Запланирована трёхдневная программа с творческими показами, лекциями и мастер-классами для молодёжи.</p>
+        <a href="https://mariupol.today/news/culture/v-mariupole-projdet-festival-cifrovogo-iskusstva-4917178/" target="_blank" rel="noopener noreferrer">Источник события</a>
+      </article>
+      <article class="news-card">
+        <time datetime="2026-09-05">5 сентября 2026</time>
+        <h3>Концерт «Ты в моём сентябре»</h3>
+        <p>В театре прошла совместная программа эстрадно-симфонического оркестра и артистов театра.</p>
+        <a href="https://teatrmariupol.ru/news/332" target="_blank" rel="noopener noreferrer">Источник новости</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section callout">
+    <div class="container callout-inner">
+      <div>
+        <h2>Продолжить знакомство с городом</h2>
+        <p>История, инфраструктура и культура вынесены на отдельные страницы.</p>
+      </div>
+      <a class="button" href="history.html">Перейти к истории</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><strong>Мариуполь</strong><br><small>История · культура · городская среда</small></div>
+    <address>Информационный городской проект</address>
+    <a href="#top">Наверх ↑</a>
+  </div>
+</footer>
+<a class="to-top" href="#top" aria-label="Наверх">↑</a>
+</body>
+</html>
